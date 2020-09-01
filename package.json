@@ -2,10 +2,14 @@
   "name": "Fullstack-Reddit-clone",
   "version": "1.0.0",
   "description": "- React\r - TypeScript\r - GraphQL\r - URQL/Apollo\r - Node.js\r - PostgreSQL\r - MikroORM/TypeORM\r - Redis\r - Next.js\r - TypeGraphQL\r - Chakra",
-  "main": "index.tsx",
+  "main": "index.js",
   "scripts": {
+    "build": "tsc",
     "watch": "tsc -w",
-    "start": "ts-node src/index.tsx"
+    "dev": "nodemon dist/index.js",
+    "start": "node dist/index.js",
+    "start2": "ts-node src/index.ts",
+    "dev2": "nodemon --exec ts-node src/index.js"
   },
   "repository": {
     "type": "git",
@@ -22,5 +26,8 @@
     "@types/node": "^14.6.0",
     "ts-node": "^9.0.0",
     "typescript": "^4.0.2"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.4"
   }
 }
